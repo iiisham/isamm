@@ -1,0 +1,19 @@
+const int ledpin = 9;
+int brightness = 0;
+int fadeamount = 5;
+void setup() {
+  // put your setup code here, to run onc
+  pinMode(ledpin, OUTPUT);
+}
+void loop()
+{
+  brightness += fadeamount;
+
+  if (brightness <= 0 || brightness >=255){
+    fadeamount= -fadeamount;
+  }
+  analogWrite(ledpin,brightness);
+  delay(30);
+  VOID loop(){
+    BUTTONSTATE=DIGITALREAD (BU)
+}
